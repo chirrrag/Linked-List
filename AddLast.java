@@ -16,14 +16,12 @@ public class AddLast {
       // Write your code here
       Node n = new Node();
       n.data = val;
-      if(size == 0) {
-          head = tail = n;
-          n.next = null;
+      if(head == null) {
+        head = tail = n;
       }
       else {
-          tail.next = n;
-          n.next = null;
-          tail = n;
+        tail.next = n;
+        tail = n;
       }
       size++;
     }
